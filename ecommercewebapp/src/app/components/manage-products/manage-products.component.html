@@ -1,0 +1,67 @@
+<div class="manage-products-container">
+  <div class="header">
+    <h2>Manage Products</h2>
+    <a routerLink="/admin/add-product" class="btn btn-primary">+ Add Product</a>
+  </div>
+
+  <!-- Error Message -->
+  @if (error) {
+    <div class="alert alert-danger">
+      {{ error }}
+    </div>
+  }
+
+  <!-- Loading State -->
+  @if (loading) {
+    <div class="loading">
+      <p>Loading products...</p>
+    </div>
+  }
+
+  <!-- Search Bar -->
+  @if (!loading) {
+    <div class="search-bar">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search by name, category, or description..."
+        [(ngModel)]="searchQuery"
+      />
+    </div>
+  }
+
+  <!-- Products Grid -->
+  @if (!loading && getFilteredProducts().length > 0) {
+    <div class="products-grid">
+      @for (product of getFilteredProducts(); track product.id) {
+        <div class="product-card">
+          <div class="product-image">
+            <img [src]="product.imageUrl" [alt]="product.name" />
+          </div>
+          <div class="product-info">
+            <h3>{{ product.name }}</h3>
+            <p class="category">{{ product.category }}</p>
+            <p class="description">{{ product.description | slice: 0: 80 }}...</p>
+            <p class="price">${{ product.price | number: '1.2-2' }}</p>
+          </div>
+          <div class="product-actions">
+            <a [routerLink]="['/admin/edit-product', product.id]" class="btn btn-edit">
+              Edit
+            </a>
+            <button (click)="deleteProduct(product.id)" class="btn btn-delete">
+              Delete
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- Empty State -->
+  @if (!loading && getFilteredProducts().length === 0 && !error) {
+    <div class="empty-state">
+      <p>{{ searchQuery ? 'No products found matching your search.' : 'No products found.' }}</p>
+      <a routerLink="/admin/add-product" class="btn btn-primary">Add First Product</a>
+    </div>
+  }
+</div>
