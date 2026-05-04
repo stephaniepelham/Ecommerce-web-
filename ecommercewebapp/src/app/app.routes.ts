@@ -6,11 +6,14 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
 import { ManageProductsComponent } from './components/manage-products/manage-products.component';
+import { About } from './components/about/about';
+
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'about', component: About },
   { path: 'order-history', component: OrderHistoryComponent },
   { path: 'admin/dashboard', component: AdminDashboardComponent },
   { path: 'admin/add-product', component: AddProductComponent },

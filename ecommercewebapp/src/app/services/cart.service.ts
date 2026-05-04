@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
 import { CartItem, Product } from '../models';
 
 @Injectable({
@@ -13,8 +14,10 @@ export class CartService {
   private cartTotalSubject = new BehaviorSubject<number>(0);
   public cartTotal$ = this.cartTotalSubject.asObservable();
 
-  constructor() {
-    this.loadCartFromStorage();
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.loadCartFromStorage();
+    }
   }
 
   addToCart(product: Product, quantity: number = 1): void {
@@ -70,15 +73,19 @@ export class CartService {
   }
 
   private saveCartToStorage(): void {
-    localStorage.setItem('cart', JSON.stringify(this.cartItems));
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('cart', JSON.stringify(this.cartItems));
+    }
   }
 
   private loadCartFromStorage(): void {
-    const stored = localStorage.getItem('cart');
-    if (stored) {
-      this.cartItems = JSON.parse(stored);
-      this.cartItemsSubject.next([...this.cartItems]);
-      this.cartTotalSubject.next(this.calculateTotal());
+    if (isPlatformBrowser(this.platformId)) {
+      const stored = localStorage.getItem('cart');
+      if (stored) {
+        this.cartItems = JSON.parse(stored);
+        this.cartItemsSubject.next([...this.cartItems]);
+        this.cartTotalSubject.next(this.calculateTotal());
+      }
     }
   }
 }
