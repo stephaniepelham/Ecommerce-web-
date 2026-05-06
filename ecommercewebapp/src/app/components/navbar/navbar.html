@@ -1,0 +1,40 @@
+<header class="navbar navbar-dark">
+  <div class="brand-stack">
+    <a class="brand" routerLink="/" aria-label="Ecommerce Web Application home">
+      <span class="brand-logo-wrap">
+        <img class="brand-logo" src="images/web.png" alt="Ecommerce Web Application logo" />
+      </span>
+      <span>Ecommerce Web Application</span>
+    </a>
+  </div>
+
+  <nav>
+    <a routerLink="/order-history" routerLinkActive="active">Shop</a>
+    <a routerLink="/admin/manage-products" routerLinkActive="active">Menu</a>
+    <a routerLink="/cart" routerLinkActive="active"
+      >Cart (<span>{{ itemCount$ | async }}</span
+      >)</a
+    >
+    @if (user$ | async) {
+      <a routerLink="/order-history" routerLinkActive="active">Track Order</a>
+    }
+    <a routerLink="/register" routerLinkActive="active">Pickup</a>
+    @let navUser = $any(user$ | async);
+    @if (navUser?.role === 'admin') {
+      <a routerLink="/admin/dashboard" routerLinkActive="active">Admin</a>
+    }
+  </nav>
+
+  @let user = $any(user$ | async);
+  @if (user) {
+    <div class="session">
+      <span>Hi, {{ user?.name }}</span>
+      <button type="button" (click)="logout()">Logout</button>
+    </div>
+  } @else {
+    <div class="session">
+      <a routerLink="/login">Login</a>
+      <a routerLink="/register">Register</a>
+    </div>
+  }
+</header>

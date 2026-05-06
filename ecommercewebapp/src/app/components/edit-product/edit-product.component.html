@@ -1,0 +1,136 @@
+<div class="edit-product-container">
+  <div class="form-card">
+    <h2>Edit Product</h2>
+
+    <!-- Error Message -->
+    @if (error) {
+      <div class="alert alert-danger">
+        {{ error }}
+      </div>
+    }
+
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <!-- Product Name -->
+      <div class="form-group">
+        <label for="name">Product Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          formControlName="name"
+          [class.is-invalid]="submitted && f['name'].errors"
+          placeholder="Enter product name"
+        />
+        @if (submitted && f['name'].errors) {
+          <div class="invalid-feedback">
+            @if (f['name'].errors['required']) {
+              <div>Product name is required</div>
+            }
+            @if (f['name'].errors['minlength']) {
+              <div>Name must be at least 3 characters</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          class="form-control"
+          id="description"
+          formControlName="description"
+          [class.is-invalid]="submitted && f['description'].errors"
+          placeholder="Enter product description"
+          rows="4"
+        ></textarea>
+        @if (submitted && f['description'].errors) {
+          <div class="invalid-feedback">
+            @if (f['description'].errors['required']) {
+              <div>Description is required</div>
+            }
+            @if (f['description'].errors['minlength']) {
+              <div>Description must be at least 10 characters</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Price -->
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input
+          type="number"
+          class="form-control"
+          id="price"
+          formControlName="price"
+          [class.is-invalid]="submitted && f['price'].errors"
+          placeholder="Enter price"
+          step="0.01"
+        />
+        @if (submitted && f['price'].errors) {
+          <div class="invalid-feedback">
+            @if (f['price'].errors['required']) {
+              <div>Price is required</div>
+            }
+            @if (f['price'].errors['min']) {
+              <div>Price must be greater than 0</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Category -->
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input
+          type="text"
+          class="form-control"
+          id="category"
+          formControlName="category"
+          [class.is-invalid]="submitted && f['category'].errors"
+          placeholder="Enter category"
+        />
+        @if (submitted && f['category'].errors) {
+          <div class="invalid-feedback">
+            @if (f['category'].errors['required']) {
+              <div>Category is required</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Image URL -->
+      <div class="form-group">
+        <label for="imageUrl">Image URL</label>
+        <input
+          type="url"
+          class="form-control"
+          id="imageUrl"
+          formControlName="imageUrl"
+          [class.is-invalid]="submitted && f['imageUrl'].errors"
+          placeholder="Enter image URL"
+        />
+        @if (submitted && f['imageUrl'].errors) {
+          <div class="invalid-feedback">
+            @if (f['imageUrl'].errors['required']) {
+              <div>Image URL is required</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="loading"
+      >
+        {{ loading ? 'Updating...' : 'Update Product' }}
+      </button>
+      <a routerLink="/admin/manage-products" class="btn btn-secondary">
+        Cancel
+      </a>
+    </form>
+  </div>
+</div>

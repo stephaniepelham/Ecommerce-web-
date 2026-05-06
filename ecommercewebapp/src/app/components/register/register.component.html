@@ -1,0 +1,121 @@
+<div class="register-container">
+  <div class="register-card">
+    <h2>Register</h2>
+    
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <!-- Error Message -->
+      @if (error) {
+        <div class="alert alert-danger">
+          {{ error }}
+        </div>
+      }
+
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          formControlName="name"
+          [class.is-invalid]="submitted && f['name'].errors"
+          placeholder="Enter your full name"
+        />
+        @if (submitted && f['name'].errors) {
+          <div class="invalid-feedback">
+            @if (f['name'].errors['required']) {
+              <div>Name is required</div>
+            }
+            @if (f['name'].errors['minlength']) {
+              <div>Name must be at least 3 characters</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          formControlName="email"
+          [class.is-invalid]="submitted && f['email'].errors"
+          placeholder="Enter your email"
+        />
+        @if (submitted && f['email'].errors) {
+          <div class="invalid-feedback">
+            @if (f['email'].errors['required']) {
+              <div>Email is required</div>
+            }
+            @if (f['email'].errors['email']) {
+              <div>Please enter a valid email</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          formControlName="password"
+          [class.is-invalid]="submitted && f['password'].errors"
+          placeholder="Enter your password"
+        />
+        @if (submitted && f['password'].errors) {
+          <div class="invalid-feedback">
+            @if (f['password'].errors['required']) {
+              <div>Password is required</div>
+            }
+            @if (f['password'].errors['minlength']) {
+              <div>Password must be at least 6 characters</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Confirm Password Field -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="confirmPassword"
+          formControlName="confirmPassword"
+          [class.is-invalid]="submitted && f['confirmPassword'].errors"
+          placeholder="Confirm your password"
+        />
+        @if (submitted && f['confirmPassword'].errors) {
+          <div class="invalid-feedback">
+            @if (f['confirmPassword'].errors['required']) {
+              <div>Confirm Password is required</div>
+            }
+            @if (f['confirmPassword'].errors['mismatch']) {
+              <div>Passwords do not match</div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="btn btn-primary btn-block"
+        [disabled]="loading"
+      >
+        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-2"></span>
+        {{ loading ? 'Registering...' : 'Register' }}
+      </button>
+    </form>
+
+    <!-- Login Link -->
+    <p class="login-link">
+      Already have an account? <a routerLink="/login">Login here</a>
+    </p>
+  </div>
+</div>
