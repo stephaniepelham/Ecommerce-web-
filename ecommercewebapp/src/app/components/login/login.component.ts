@@ -49,13 +49,14 @@ export class LoginComponent {
 
     this.authService.login(loginRequest).subscribe({
       next: (response) => {
+        this.loading = false;
         this.authService.storeToken(response.token);
         this.authService.storeUser(response.user);
         this.router.navigate(['/order-history']);
       },
       error: (error) => {
-        this.error = error.error?.message || 'Login failed. Please try again.';
         this.loading = false;
+        this.error = error.error?.message || 'Login failed. Please try again.';
       }
     });
   }

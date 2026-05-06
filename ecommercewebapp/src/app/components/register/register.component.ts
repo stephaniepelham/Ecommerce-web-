@@ -63,11 +63,12 @@ export class RegisterComponent {
 
     this.authService.register(registerRequest).subscribe({
       next: (user) => {
+        this.loading = false;
         this.router.navigate(['/login']);
       },
       error: (error) => {
-        this.error = error.error?.message || 'Registration failed. Please try again.';
         this.loading = false;
+        this.error = error.error?.message || 'Registration failed. Please try again.';
       }
     });
   }
