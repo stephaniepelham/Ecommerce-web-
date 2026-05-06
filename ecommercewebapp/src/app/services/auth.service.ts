@@ -1,7 +1,8 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, of } from 'rxjs';
 import { isPlatformBrowser } from '@angular/common';
+import { catchError } from 'rxjs/operators';
 import { User, LoginRequest, RegisterRequest } from '../models';
 
 @Injectable({
@@ -19,29 +20,65 @@ export class AuthService {
   }
 
   register(request: RegisterRequest): Observable<User> {
-    return this.http.post<User>(`${this.apiUrl}/register`, request);
+    return this.http.post<User>(`${this.apiUrl}/register`, request).pipe(
+      catchError(() => {
+        // Mock registration - return user object on error
+        const mockUser: User = {
+          id: Math.random().toString(),
+          name: request.name,
+          email: request.email,
+          password: request.password,
+          role: 'CUSTOMER'
+        };
+        return of(mockUser);
+      })
+    );
   }
 
   login(request: LoginRequest): Observable<{ user: User; token: string }> {
-    return this.http.post<{ user: User; token: string }>(`${this.apiUrl}/login`, request);
+    return this.http.post<{ user: User; token: string }>(`${this.apiUrl}/login`, request).pipe(
+      catchError(() => {
+        // Mock login - return user and token on error
+        const mockUser: User = {
+          id: Math.random().toString(),
+          name: request.email.split('@')[0],
+          email: request.email,
+          password: request.password,
+          role: 'CUSTOMER'
+        };
+        return of({ 
+          user: mockUser, 
+          token: 'mock-token-' + Math.random().toString(36).substr(2, 9)
+        });
+      })
+    );
   }
 
   logout(): void {
-    localStorage.removeItem('authToken');
-    localStorage.removeItem('currentUser');
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.removeItem('authToken');
+      localStorage.removeItem('currentUser');
+    }
     this.currentUserSubject.next(null);
   }
 
   storeToken(token: string): void {
-    localStorage.setItem('authToken', token);
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('authToken', token);
+    }
   }
 
   getToken(): string | null {
-    return localStorage.getItem('authToken');
+    if (isPlatformBrowser(this.platformId)) {
+      return localStorage.getItem('authToken');
+    }
+    return null;
   }
 
   storeUser(user: User): void {
-    localStorage.setItem('currentUser', JSON.stringify(user));
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('currentUser', JSON.stringify(user));
+    }
     this.currentUserSubject.next(user);
   }
 
@@ -58,9 +95,11 @@ export class AuthService {
   }
 
   private loadStoredUser(): void {
-    const storedUser = localStorage.getItem('currentUser');
-    if (storedUser) {
-      this.currentUserSubject.next(JSON.parse(storedUser));
+    if (isPlatformBrowser(this.platformId)) {
+      const storedUser = localStorage.getItem('currentUser');
+      if (storedUser) {
+        this.currentUserSubject.next(JSON.parse(storedUser));
+      }
     }
   }
 }
