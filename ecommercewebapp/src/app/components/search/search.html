@@ -1,0 +1,8 @@
+﻿<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Search products or categories"
+    [(ngModel)]="searchTerm"
+    (input)="updateSearch()" />
+  <button class="secondary" type="button" (click)="updateSearch()">Search</button>
+</div>

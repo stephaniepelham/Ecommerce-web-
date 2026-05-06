@@ -1,0 +1,20 @@
+﻿<section class="product-detail-page">
+  <ng-container *ngIf="product; else notFound">
+    <div class="detail-card">
+      <img [src]="product.image" [alt]="product.name" loading="lazy" />
+      <div class="detail-content">
+        <h2>{{ product.name }}</h2>
+        <p class="category">{{ product.category }}</p>
+        <p class="price">${{ product.price.toFixed(2) }}</p>
+        <p>{{ product.description }}</p>
+        <div class="detail-actions">
+          <button class="primary" (click)="addToCart()">Add to Cart</button>
+          <a class="secondary button" routerLink="/cart">View Cart</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #notFound>
+    <p>Product not found. Return to the <a routerLink="/">home page</a>.</p>
+  </ng-template>
+</section>
