@@ -1,0 +1,38 @@
+﻿<section class="checkout-page">
+  <h2>Checkout</h2>
+  <ng-container *ngIf="!submitted; else confirmation">
+    <div class="checkout-layout">
+      <form class="checkout-form" (ngSubmit)="placeOrder()">
+        <label>
+          Name
+          <input type="text" [(ngModel)]="customerName" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" [(ngModel)]="email" name="email" required />
+        </label>
+        <label>
+          Address
+          <input type="text" [(ngModel)]="address" name="address" required />
+        </label>
+        <label>
+          City
+          <input type="text" [(ngModel)]="city" name="city" required />
+        </label>
+        <button type="submit" class="primary">Place Order</button>
+      </form>
+      <aside class="order-summary">
+        <h3>Order Summary</h3>
+        <p>Total amount</p>
+        <strong>${{ total.toFixed(2) }}</strong>
+      </aside>
+    </div>
+  </ng-container>
+  <ng-template #confirmation>
+    <div class="confirmation-box">
+      <h3>Thank you!</h3>
+      <p>Your order has been placed successfully.</p>
+      <a routerLink="/" class="button primary">Return to Shop</a>
+    </div>
+  </ng-template>
+</section>
