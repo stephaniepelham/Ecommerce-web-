@@ -59,6 +59,8 @@ export class AddProductComponent {
       description: this.f['description'].value,
       price: parseFloat(this.f['price'].value),
       category: this.f['category'].value,
+      inventory: 1,
+      image: this.f['imageUrl'].value,
       imageUrl: this.f['imageUrl'].value,
       createdBy: user.id
     };
