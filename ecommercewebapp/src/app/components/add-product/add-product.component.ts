@@ -55,13 +55,14 @@ export class AddProductComponent {
     }
 
     const product: Omit<Product, 'id'> = {
-      name: this.f['name'].value,
-      description: this.f['description'].value,
-      price: parseFloat(this.f['price'].value),
-      category: this.f['category'].value,
-      imageUrl: this.f['imageUrl'].value,
-      createdBy: user.id
-    };
+  name: this.f['name'].value,
+  description: this.f['description'].value,
+  price: parseFloat(this.f['price'].value),
+  category: this.f['category'].value,
+  imageUrl: this.f['imageUrl'].value,
+  createdBy: user.id,
+  inventory: 0   
+};
 
     this.adminService.addProduct(product).subscribe({
       next: () => {

@@ -1,7 +1,7 @@
 ﻿<section class="product-detail-page">
   <ng-container *ngIf="product; else notFound">
     <div class="detail-card">
-      <img [src]="product.image" [alt]="product.name" loading="lazy" />
+      <img [src]="product.imageUrl" [alt]="product.name" loading="lazy" />
       <div class="detail-content">
         <h2>{{ product.name }}</h2>
         <p class="category">{{ product.category }}</p>

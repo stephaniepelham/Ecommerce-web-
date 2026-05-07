@@ -26,6 +26,12 @@
   text-decoration: none;
   margin-left: 1rem;
 }
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: none;
+}
 .page-content {
   width: min(1200px, 100%);
   margin: 1.5rem auto;

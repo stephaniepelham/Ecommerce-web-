@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product.model';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Product } from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +9,11 @@ export class ProductService {
     {
       id: '1',
       name: 'Echo Show 10 (3rd Gen)',
-      description: '10.1\" HD smart display with motion, premium speakers, and Alexa voice assistant for hands-free control.',
+      description: '10.1" HD smart display with motion, premium speakers, and Alexa voice assistant for hands-free control.',
       category: 'Electronics',
       price: 249.99,
       inventory: 42,
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80',
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Echo+Show+10+3rd+Gen+product&w=640&h=640&c=7',
       createdBy: 'admin'
     },
     {
@@ -26,25 +23,28 @@ export class ProductService {
       category: 'Audio',
       price: 249.00,
       inventory: 78,
-      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Apple+AirPods+Pro+2+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '3',
       name: 'Nintendo Switch OLED Model',
-      description: 'Portable gaming system with 7\" OLED screen, enhanced audio, and a wide adjustable stand for tabletop play.',
+      description: 'Portable gaming system with 7" OLED screen, enhanced audio, and a wide adjustable stand for tabletop play.',
       category: 'Gaming',
       price: 349.99,
       inventory: 36,
-      imageUrl: 'https://images.unsplash.com/photo-1606813909125-4d606b23d6b7?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Nintendo+Switch+OLED+Model+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '4',
-      name: 'Samsung 65\" QLED 4K Smart TV',
+      name: 'Samsung 65" QLED 4K Smart TV',
       description: '4K QLED display with Quantum HDR, built-in voice assistant, and a slim bezel design for immersive viewing.',
       category: 'TV & Video',
       price: 899.99,
       inventory: 20,
-      imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Samsung+65+QLED+4K+Smart+TV+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '5',
@@ -53,7 +53,8 @@ export class ProductService {
       category: 'Books',
       price: 189.99,
       inventory: 63,
-      imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Kindle+Paperwhite+Signature+Edition+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '6',
@@ -62,7 +63,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 89.99,
       inventory: 95,
-      imageUrl: 'https://images.unsplash.com/photo-1511689660979-5be60c809e20?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Instant+Pot+Duo+7+in+1+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '7',
@@ -71,7 +73,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 129.99,
       inventory: 52,
-      imageUrl: 'https://images.unsplash.com/photo-1511689660979-5be60c809e20?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Ninja+Air+Fryer+XL+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '8',
@@ -80,7 +83,8 @@ export class ProductService {
       category: 'Electronics',
       price: 49.99,
       inventory: 112,
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Roku+Streaming+Stick+4K+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '9',
@@ -89,7 +93,8 @@ export class ProductService {
       category: 'Audio',
       price: 329.00,
       inventory: 18,
-      imageUrl: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Bose+QuietComfort+45+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '10',
@@ -98,7 +103,8 @@ export class ProductService {
       category: 'Wearables',
       price: 399.00,
       inventory: 34,
-      imageUrl: 'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Apple+Watch+Series+9+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '11',
@@ -107,7 +113,8 @@ export class ProductService {
       category: 'Audio',
       price: 348.00,
       inventory: 28,
-      imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Sony+WH-1000XM5+Wireless+Noise+Cancelling+Headphones+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '12',
@@ -116,7 +123,8 @@ export class ProductService {
       category: 'Gaming',
       price: 299.99,
       inventory: 46,
-      imageUrl: 'https://images.unsplash.com/photo-1512446733611-9099a758e1a4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Oculus+Quest+2+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '13',
@@ -125,7 +133,8 @@ export class ProductService {
       category: 'Audio',
       price: 249.99,
       inventory: 55,
-      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Beats+Studio3+Wireless+Headphones+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '14',
@@ -134,7 +143,8 @@ export class ProductService {
       category: 'Computers',
       price: 1199.00,
       inventory: 14,
-      imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Apple+MacBook+Air+M2+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '15',
@@ -143,7 +153,8 @@ export class ProductService {
       category: 'Computers',
       price: 1049.99,
       inventory: 23,
-      imageUrl: 'https://images.unsplash.com/photo-1541807084-5c52b6b418af?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Dell+XPS+13+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '16',
@@ -152,7 +163,8 @@ export class ProductService {
       category: 'Electronics',
       price: 39.99,
       inventory: 135,
-      imageUrl: 'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Anker+65W+USB-C+Charger+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '17',
@@ -161,7 +173,8 @@ export class ProductService {
       category: 'Computers',
       price: 99.99,
       inventory: 65,
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Logitech+MX+Master+3S+Wireless+Mouse+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '18',
@@ -170,7 +183,8 @@ export class ProductService {
       category: 'Office',
       price: 129.99,
       inventory: 49,
-      imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=HP+Envy+6055e+All-in-One+Printer+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '19',
@@ -179,7 +193,8 @@ export class ProductService {
       category: 'Books',
       price: 249.99,
       inventory: 31,
-      imageUrl: 'https://images.unsplash.com/photo-1473755504818-b72b6dfdc7cc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Kindle+Oasis+10th+Generation+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '20',
@@ -188,7 +203,8 @@ export class ProductService {
       category: 'Photography',
       price: 69.99,
       inventory: 88,
-      imageUrl: 'https://images.unsplash.com/photo-1519183071298-a2962f4bda50?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Fujifilm+Instax+Mini+11+Camera+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '21',
@@ -197,7 +213,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 699.95,
       inventory: 19,
-      imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Breville+Barista+Express+Espresso+Machine+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '22',
@@ -206,7 +223,8 @@ export class ProductService {
       category: 'Home',
       price: 599.99,
       inventory: 27,
-      imageUrl: 'https://images.unsplash.com/photo-1587825140708-5d75f0f8e7b4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Dyson+V11+Torque+Drive+Cordless+Vacuum+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '23',
@@ -215,7 +233,8 @@ export class ProductService {
       category: 'Home',
       price: 274.99,
       inventory: 41,
-      imageUrl: 'https://images.unsplash.com/photo-1598300050699-3f2377e5da52?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=iRobot+Roomba+694+Robot+Vacuum+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '24',
@@ -224,7 +243,8 @@ export class ProductService {
       category: 'Smart Home',
       price: 179.99,
       inventory: 60,
-      imageUrl: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Philips+Hue+White+and+Color+Ambiance+Starter+Kit+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '25',
@@ -233,7 +253,8 @@ export class ProductService {
       category: 'Smart Home',
       price: 199.99,
       inventory: 48,
-      imageUrl: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Ring+Video+Doorbell+4+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '26',
@@ -242,7 +263,8 @@ export class ProductService {
       category: 'Wearables',
       price: 179.95,
       inventory: 71,
-      imageUrl: 'https://images.unsplash.com/photo-1518441615474-45da0a35d8be?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Fitbit+Charge+6+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '27',
@@ -251,7 +273,8 @@ export class ProductService {
       category: 'Health',
       price: 299.00,
       inventory: 33,
-      imageUrl: 'https://images.unsplash.com/photo-1584466977774-1716f47f073f?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Theragun+Prime+Percussive+Therapy+Device+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '28',
@@ -260,7 +283,8 @@ export class ProductService {
       category: 'Outdoors',
       price: 44.95,
       inventory: 105,
-      imageUrl: 'https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Hydro+Flask+32oz+Wide+Mouth+Water+Bottle+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '29',
@@ -269,7 +293,8 @@ export class ProductService {
       category: 'Outdoors',
       price: 129.99,
       inventory: 39,
-      imageUrl: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Coleman+Sundome+4-Person+Tent+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '30',
@@ -278,7 +303,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 99.99,
       inventory: 47,
-      imageUrl: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Ninja+Professional+72oz+Blender+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '31',
@@ -287,7 +313,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 329.95,
       inventory: 16,
-      imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Le+Creuset+Signature+Enameled+Cast+Iron+Dutch+Oven+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '32',
@@ -296,7 +323,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 129.99,
       inventory: 77,
-      imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Keurig+K-Elite+Coffee+Maker&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '33',
@@ -305,7 +333,8 @@ export class ProductService {
       category: 'Electronics',
       price: 49.99,
       inventory: 134,
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Echo+Dot+5th+Gen+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '34',
@@ -314,7 +343,8 @@ export class ProductService {
       category: 'Audio',
       price: 299.00,
       inventory: 24,
-      imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Bose+SoundLink+Revolve+Plus+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '35',
@@ -323,7 +353,8 @@ export class ProductService {
       category: 'Photography',
       price: 449.99,
       inventory: 13,
-      imageUrl: 'https://images.unsplash.com/photo-1519183071298-a2962f4bda50?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Panasonic+Lumix+ZS70+Travel+Camera+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '36',
@@ -332,7 +363,8 @@ export class ProductService {
       category: 'Wearables',
       price: 199.99,
       inventory: 40,
-      imageUrl: 'https://images.unsplash.com/photo-1518441615474-45da0a35d8be?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Garmin+Forerunner+55+GPS+Running+Watch+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '37',
@@ -341,7 +373,8 @@ export class ProductService {
       category: 'Cell Phones',
       price: 799.99,
       inventory: 29,
-      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Samsung+Galaxy+S23+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '38',
@@ -350,7 +383,8 @@ export class ProductService {
       category: 'Audio',
       price: 129.99,
       inventory: 49,
-      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Anker+Soundcore+Liberty+Air+2+Pro+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '39',
@@ -359,7 +393,8 @@ export class ProductService {
       category: 'Home',
       price: 549.99,
       inventory: 14,
-      imageUrl: 'https://images.unsplash.com/photo-1598300050699-3f2377e5da52?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Roomba+i3+3550+Robot+Vacuum+Automatic+Dirt+Disposal+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '40',
@@ -368,7 +403,8 @@ export class ProductService {
       category: 'Home',
       price: 229.99,
       inventory: 38,
-      imageUrl: 'https://images.unsplash.com/photo-1587825140708-5d75f0f8e7b4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Bissell+CrossWave+Floor+and+Carpet+Cleaner+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '41',
@@ -377,7 +413,8 @@ export class ProductService {
       category: 'Electronics',
       price: 59.99,
       inventory: 90,
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Echo+Dot+Kids+Edition+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '42',
@@ -386,7 +423,8 @@ export class ProductService {
       category: 'Networking',
       price: 129.99,
       inventory: 58,
-      imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=TP-Link+Archer+AX50+Wi-Fi+6+Router+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '43',
@@ -395,7 +433,8 @@ export class ProductService {
       category: 'Computers',
       price: 449.99,
       inventory: 34,
-      imageUrl: 'https://images.unsplash.com/photo-1541807084-5c52b6b418af?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Lenovo+IdeaPad+3+15-inch+Laptop+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '44',
@@ -404,7 +443,8 @@ export class ProductService {
       category: 'Computers',
       price: 139.99,
       inventory: 76,
-      imageUrl: 'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Samsung+T7+Portable+SSD+1TB+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '45',
@@ -413,7 +453,8 @@ export class ProductService {
       category: 'Smart Home',
       price: 199.99,
       inventory: 26,
-      imageUrl: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Eufy+Smart+Lock+Touch+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '46',
@@ -422,7 +463,8 @@ export class ProductService {
       category: 'Kitchen',
       price: 159.00,
       inventory: 29,
-      imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Nespresso+VertuoPlus+Coffee+and+Espresso+Machine+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '47',
@@ -431,7 +473,8 @@ export class ProductService {
       category: 'Cell Phones',
       price: 699.00,
       inventory: 22,
-      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Google+Pixel+8+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '48',
@@ -440,7 +483,8 @@ export class ProductService {
       category: 'Audio',
       price: 129.95,
       inventory: 81,
-      imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=JBL+Flip+6+Portable+Bluetooth+Speaker+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '49',
@@ -449,7 +493,8 @@ export class ProductService {
       category: 'Office',
       price: 19.95,
       inventory: 172,
-      imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Moleskine+Classic+Hardcover+Notebook+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '50',
@@ -458,7 +503,8 @@ export class ProductService {
       category: 'Apparel',
       price: 149.95,
       inventory: 39,
-      imageUrl: 'https://images.unsplash.com/photo-1517341725137-c6c48ef1b2f1?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Ugg+Classic+Mini+II+Boots+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '51',
@@ -467,7 +513,8 @@ export class ProductService {
       category: 'Gaming',
       price: 499.99,
       inventory: 12,
-      imageUrl: 'https://images.unsplash.com/photo-1606813909125-4d606b23d6b7?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Sony+PlayStation+5+Console+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     },
     {
       id: '52',
@@ -476,7 +523,8 @@ export class ProductService {
       category: 'Beauty',
       price: 549.99,
       inventory: 17,
-      imageUrl: 'https://images.unsplash.com/photo-1516199422444-07c14ebc88bc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
+      imageUrl: 'https://tse1.mm.bing.net/th?q=Dyson+Airwrap+Multi-Styler+Complete+product&w=640&h=640&c=7',
+      createdBy: 'admin'
     }
   ];
 
