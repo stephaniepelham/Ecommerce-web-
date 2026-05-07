@@ -9,7 +9,8 @@ import { ManageProductsComponent } from './components/manage-products/manage-pro
 import { About } from './components/about/about';
 import { HomeComponent } from './components/home/home';
 import { ProductListComponent } from './components/product-list/product-list';
-import { SearchComponent } from './components/search/search';
+import { ProductDetail } from './components/product-detail/product-detail';
+import { SearchComponent } from './components/search/search';   
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';    
 
@@ -26,9 +27,6 @@ export const routes: Routes = [
   { path: 'admin/edit-product/:id', component: EditProductComponent },
   { path: 'admin/delete-product/:id', component: EditProductComponent },
   { path: 'products', component: ProductListComponent },
-  { path: 'search', component: SearchComponent },   
-  { path: 'navbar', component: Navbar },
-  { path: 'footer', component: Footer },     
-  { path: 'admin/manage-products', component: ManageProductsComponent },
+  { path: 'product/:id', component: ProductDetail },
   { path: '**', redirectTo: '' }
 ];
