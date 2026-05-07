@@ -15,6 +15,7 @@ export class ProductService {
       inventory: 42,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Echo+Show+10+3rd+Gen+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Echo+Show+10+3rd+Gen+product&w=640&h=640&c=7'
     },
     {
       id: '2',
@@ -25,6 +26,7 @@ export class ProductService {
       inventory: 78,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Apple+AirPods+Pro+2+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Apple+AirPods+Pro+2+product&w=640&h=640&c=7'
     },
     {
       id: '3',
@@ -35,6 +37,7 @@ export class ProductService {
       inventory: 36,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Nintendo+Switch+OLED+Model+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Nintendo+Switch+OLED+Model+product&w=640&h=640&c=7'
     },
     {
       id: '4',
@@ -45,6 +48,7 @@ export class ProductService {
       inventory: 20,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Samsung+65+QLED+4K+Smart+TV+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Samsung+65+QLED+4K+Smart+TV+product&w=640&h=640&c=7'
     },
     {
       id: '5',
@@ -55,6 +59,7 @@ export class ProductService {
       inventory: 63,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Kindle+Paperwhite+Signature+Edition+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Kindle+Paperwhite+Signature+Edition+product&w=640&h=640&c=7'
     },
     {
       id: '6',
@@ -65,6 +70,7 @@ export class ProductService {
       inventory: 95,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Instant+Pot+Duo+7+in+1+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Instant+Pot+Duo+7+in+1+product&w=640&h=640&c=7'
     },
     {
       id: '7',
@@ -75,6 +81,7 @@ export class ProductService {
       inventory: 52,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Ninja+Air+Fryer+XL+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Ninja+Air+Fryer+XL+product&w=640&h=640&c=7'
     },
     {
       id: '8',
@@ -85,6 +92,7 @@ export class ProductService {
       inventory: 112,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Roku+Streaming+Stick+4K+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Roku+Streaming+Stick+4K+product&w=640&h=640&c=7'
     },
     {
       id: '9',
@@ -95,6 +103,7 @@ export class ProductService {
       inventory: 18,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Bose+QuietComfort+45+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Bose+QuietComfort+45+product&w=640&h=640&c=7'
     },
     {
       id: '10',
@@ -105,6 +114,7 @@ export class ProductService {
       inventory: 34,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Apple+Watch+Series+9+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Apple+Watch+Series+9+product&w=640&h=640&c=7'
     },
     {
       id: '11',
@@ -115,6 +125,7 @@ export class ProductService {
       inventory: 28,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Sony+WH-1000XM5+Wireless+Noise+Cancelling+Headphones+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Sony+WH-1000XM5+Wireless+Noise+Cancelling+Headphones+product&w=640&h=640&c=7'
     },
     {
       id: '12',
@@ -125,6 +136,7 @@ export class ProductService {
       inventory: 46,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Oculus+Quest+2+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Oculus+Quest+2+product&w=640&h=640&c=7'
     },
     {
       id: '13',
@@ -135,6 +147,7 @@ export class ProductService {
       inventory: 55,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Beats+Studio3+Wireless+Headphones+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Beats+Studio3+Wireless+Headphones+product&w=640&h=640&c=7'
     },
     {
       id: '14',
@@ -145,6 +158,7 @@ export class ProductService {
       inventory: 14,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Apple+MacBook+Air+M2+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Apple+MacBook+Air+M2+product&w=640&h=640&c=7'
     },
     {
       id: '15',
@@ -155,6 +169,7 @@ export class ProductService {
       inventory: 23,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Dell+XPS+13+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Dell+XPS+13+product&w=640&h=640&c=7'
     },
     {
       id: '16',
@@ -165,6 +180,7 @@ export class ProductService {
       inventory: 135,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Anker+65W+USB-C+Charger+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Anker+65W+USB-C+Charger+product&w=640&h=640&c=7'
     },
     {
       id: '17',
@@ -175,6 +191,7 @@ export class ProductService {
       inventory: 65,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Logitech+MX+Master+3S+Wireless+Mouse+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Logitech+MX+Master+3S+Wireless+Mouse+product&w=640&h=640&c=7'
     },
     {
       id: '18',
@@ -185,6 +202,7 @@ export class ProductService {
       inventory: 49,
       imageUrl: 'https://tse1.mm.bing.net/th?q=HP+Envy+6055e+All-in-One+Printer+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=HP+Envy+6055e+All-in-One+Printer+product&w=640&h=640&c=7'
     },
     {
       id: '19',
@@ -195,6 +213,7 @@ export class ProductService {
       inventory: 31,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Kindle+Oasis+10th+Generation+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Kindle+Oasis+10th+Generation+product&w=640&h=640&c=7'
     },
     {
       id: '20',
@@ -205,6 +224,7 @@ export class ProductService {
       inventory: 88,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Fujifilm+Instax+Mini+11+Camera+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Fujifilm+Instax+Mini+11+Camera+product&w=640&h=640&c=7'
     },
     {
       id: '21',
@@ -215,6 +235,7 @@ export class ProductService {
       inventory: 19,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Breville+Barista+Express+Espresso+Machine+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Breville+Barista+Express+Espresso+Machine+product&w=640&h=640&c=7'
     },
     {
       id: '22',
@@ -225,6 +246,7 @@ export class ProductService {
       inventory: 27,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Dyson+V11+Torque+Drive+Cordless+Vacuum+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Dyson+V11+Torque+Drive+Cordless+Vacuum+product&w=640&h=640&c=7'
     },
     {
       id: '23',
@@ -235,6 +257,7 @@ export class ProductService {
       inventory: 41,
       imageUrl: 'https://tse1.mm.bing.net/th?q=iRobot+Roomba+694+Robot+Vacuum+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=iRobot+Roomba+694+Robot+Vacuum+product&w=640&h=640&c=7'
     },
     {
       id: '24',
@@ -245,6 +268,7 @@ export class ProductService {
       inventory: 60,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Philips+Hue+White+and+Color+Ambiance+Starter+Kit+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Philips+Hue+White+and+Color+Ambiance+Starter+Kit+product&w=640&h=640&c=7'
     },
     {
       id: '25',
@@ -255,6 +279,7 @@ export class ProductService {
       inventory: 48,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Ring+Video+Doorbell+4+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Ring+Video+Doorbell+4+product&w=640&h=640&c=7'
     },
     {
       id: '26',
@@ -265,6 +290,7 @@ export class ProductService {
       inventory: 71,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Fitbit+Charge+6+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Fitbit+Charge+6+product&w=640&h=640&c=7'
     },
     {
       id: '27',
@@ -275,6 +301,7 @@ export class ProductService {
       inventory: 33,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Theragun+Prime+Percussive+Therapy+Device+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Theragun+Prime+Percussive+Therapy+Device+product&w=640&h=640&c=7'
     },
     {
       id: '28',
@@ -285,6 +312,7 @@ export class ProductService {
       inventory: 105,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Hydro+Flask+32oz+Wide+Mouth+Water+Bottle+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Hydro+Flask+32oz+Wide+Mouth+Water+Bottle+product&w=640&h=640&c=7'
     },
     {
       id: '29',
@@ -295,6 +323,7 @@ export class ProductService {
       inventory: 39,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Coleman+Sundome+4-Person+Tent+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Coleman+Sundome+4-Person+Tent+product&w=640&h=640&c=7'
     },
     {
       id: '30',
@@ -305,6 +334,7 @@ export class ProductService {
       inventory: 47,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Ninja+Professional+72oz+Blender+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Ninja+Professional+72oz+Blender+product&w=640&h=640&c=7'
     },
     {
       id: '31',
@@ -315,6 +345,7 @@ export class ProductService {
       inventory: 16,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Le+Creuset+Signature+Enameled+Cast+Iron+Dutch+Oven+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Le+Creuset+Signature+Enameled+Cast+Iron+Dutch+Oven+product&w=640&h=640&c=7'
     },
     {
       id: '32',
@@ -325,6 +356,7 @@ export class ProductService {
       inventory: 77,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Keurig+K-Elite+Coffee+Maker&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Keurig+K-Elite+Coffee+Maker+product&w=640&h=640&c=7'
     },
     {
       id: '33',
@@ -335,6 +367,7 @@ export class ProductService {
       inventory: 134,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Echo+Dot+5th+Gen+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Echo+Dot+5th+Gen+product&w=640&h=640&c=7'
     },
     {
       id: '34',
@@ -345,6 +378,7 @@ export class ProductService {
       inventory: 24,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Bose+SoundLink+Revolve+Plus+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Bose+SoundLink+Revolve+Plus+product&w=640&h=640&c=7'
     },
     {
       id: '35',
@@ -355,6 +389,7 @@ export class ProductService {
       inventory: 13,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Panasonic+Lumix+ZS70+Travel+Camera+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Panasonic+Lumix+ZS70+Travel+Camera+product&w=640&h=640&c=7'
     },
     {
       id: '36',
@@ -365,6 +400,7 @@ export class ProductService {
       inventory: 40,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Garmin+Forerunner+55+GPS+Running+Watch+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Garmin+Forerunner+55+GPS+Running+Watch+product&w=640&h=640&c=7'
     },
     {
       id: '37',
@@ -375,6 +411,7 @@ export class ProductService {
       inventory: 29,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Samsung+Galaxy+S23+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Samsung+Galaxy+S23+product&w=640&h=640&c=7'
     },
     {
       id: '38',
@@ -385,6 +422,7 @@ export class ProductService {
       inventory: 49,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Anker+Soundcore+Liberty+Air+2+Pro+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Anker+Soundcore+Liberty+Air+2+Pro+product&w=640&h=640&c=7'
     },
     {
       id: '39',
@@ -395,6 +433,7 @@ export class ProductService {
       inventory: 14,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Roomba+i3+3550+Robot+Vacuum+Automatic+Dirt+Disposal+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Roomba+i3+3550+Robot+Vacuum+Automatic+Dirt+Disposal+product&w=640&h=640&c=7'
     },
     {
       id: '40',
@@ -405,6 +444,7 @@ export class ProductService {
       inventory: 38,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Bissell+CrossWave+Floor+and+Carpet+Cleaner+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Bissell+CrossWave+Floor+and+Carpet+Cleaner+product&w=640&h=640&c=7'
     },
     {
       id: '41',
@@ -415,6 +455,7 @@ export class ProductService {
       inventory: 90,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Echo+Dot+Kids+Edition+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Echo+Dot+Kids+Edition+product&w=640&h=640&c=7'
     },
     {
       id: '42',
@@ -425,6 +466,7 @@ export class ProductService {
       inventory: 58,
       imageUrl: 'https://tse1.mm.bing.net/th?q=TP-Link+Archer+AX50+Wi-Fi+6+Router+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=TP-Link+Archer+AX50+Wi-Fi+6+Router+product&w=640&h=640&c=7'
     },
     {
       id: '43',
@@ -435,6 +477,7 @@ export class ProductService {
       inventory: 34,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Lenovo+IdeaPad+3+15-inch+Laptop+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Lenovo+IdeaPad+3+15-inch+Laptop+product&w=640&h=640&c=7'
     },
     {
       id: '44',
@@ -445,6 +488,7 @@ export class ProductService {
       inventory: 76,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Samsung+T7+Portable+SSD+1TB+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Samsung+T7+Portable+SSD+1TB+product&w=640&h=640&c=7'
     },
     {
       id: '45',
@@ -455,6 +499,7 @@ export class ProductService {
       inventory: 26,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Eufy+Smart+Lock+Touch+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Eufy+Smart+Lock+Touch+product&w=640&h=640&c=7'
     },
     {
       id: '46',
@@ -465,6 +510,7 @@ export class ProductService {
       inventory: 29,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Nespresso+VertuoPlus+Coffee+and+Espresso+Machine+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Nespresso+VertuoPlus+Coffee+and+Espresso+Machine+product&w=640&h=640&c=7'
     },
     {
       id: '47',
@@ -475,6 +521,7 @@ export class ProductService {
       inventory: 22,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Google+Pixel+8+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Google+Pixel+8+product&w=640&h=640&c=7'
     },
     {
       id: '48',
@@ -485,6 +532,7 @@ export class ProductService {
       inventory: 81,
       imageUrl: 'https://tse1.mm.bing.net/th?q=JBL+Flip+6+Portable+Bluetooth+Speaker+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=JBL+Flip+6+Portable+Bluetooth+Speaker+product&w=640&h=640&c=7'
     },
     {
       id: '49',
@@ -495,6 +543,7 @@ export class ProductService {
       inventory: 172,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Moleskine+Classic+Hardcover+Notebook+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Moleskine+Classic+Hardcover+Notebook+product&w=640&h=640&c=7'
     },
     {
       id: '50',
@@ -505,6 +554,7 @@ export class ProductService {
       inventory: 39,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Ugg+Classic+Mini+II+Boots+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Ugg+Classic+Mini+II+Boots+product&w=640&h=640&c=7'
     },
     {
       id: '51',
@@ -515,6 +565,7 @@ export class ProductService {
       inventory: 12,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Sony+PlayStation+5+Console+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Sony+PlayStation+5+Console+product&w=640&h=640&c=7'
     },
     {
       id: '52',
@@ -525,6 +576,7 @@ export class ProductService {
       inventory: 17,
       imageUrl: 'https://tse1.mm.bing.net/th?q=Dyson+Airwrap+Multi-Styler+Complete+product&w=640&h=640&c=7',
       createdBy: 'admin'
+      image: 'https://tse1.mm.bing.net/th?q=Dyson+Airwrap+Multi-Styler+Complete+product&w=640&h=640&c=7'
     }
   ];
 

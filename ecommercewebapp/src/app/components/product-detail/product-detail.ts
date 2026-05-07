@@ -22,10 +22,40 @@ export class ProductDetail implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
+    const id = this.resolveProductIdFromRoute();
     if (id) {
       this.product = this.productService.getProductById(id);
     }
+  }
+
+  private resolveProductIdFromRoute(): string | null {
+    const routeParam = this.route.snapshot.paramMap.get('id') ?? this.route.snapshot.paramMap.get('productId');
+    if (routeParam) {
+      return routeParam;
+    }
+
+    const queryParam = this.route.snapshot.queryParamMap.get('id');
+    if (queryParam) {
+      return queryParam;
+    }
+
+    const urlSegments = this.route.snapshot.url.map((segment) => segment.path).filter(Boolean);
+    if (urlSegments.length > 0) {
+      const lastSegment = urlSegments[urlSegments.length - 1];
+      if (/^[0-9]+$/.test(lastSegment) || /^[a-zA-Z0-9_-]+$/.test(lastSegment)) {
+        return lastSegment;
+      }
+    }
+
+    const pathname = window.location.pathname.split('/').filter(Boolean);
+    if (pathname.length > 0) {
+      const lastSegment = pathname[pathname.length - 1];
+      if (/^[0-9]+$/.test(lastSegment) || /^[a-zA-Z0-9_-]+$/.test(lastSegment)) {
+        return lastSegment;
+      }
+    }
+
+    return null;
   }
 
   addToCart(): void {

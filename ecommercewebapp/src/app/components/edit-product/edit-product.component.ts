@@ -61,6 +61,19 @@ export class EditProductComponent implements OnInit {
     } else {
       this.error = 'Product not found';
     }
+
+    if (!product) {
+      this.error = 'Product not found';
+      return;
+    }
+
+    this.productForm.patchValue({
+      name: product.name,
+      description: product.description,
+      price: product.price,
+      category: product.category,
+      imageUrl: product.imageUrl ?? ''
+    });
   }
 
   onSubmit(): void {

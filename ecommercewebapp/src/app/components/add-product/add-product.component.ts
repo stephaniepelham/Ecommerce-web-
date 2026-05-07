@@ -63,6 +63,15 @@ export class AddProductComponent {
   createdBy: user.id,
   inventory: 0   
 };
+      name: this.f['name'].value,
+      description: this.f['description'].value,
+      price: parseFloat(this.f['price'].value),
+      category: this.f['category'].value,
+      inventory: 1,
+      image: this.f['imageUrl'].value,
+      imageUrl: this.f['imageUrl'].value,
+      createdBy: user.id
+    };
 
     this.adminService.addProduct(product).subscribe({
       next: () => {

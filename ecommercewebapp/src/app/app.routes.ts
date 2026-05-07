@@ -11,6 +11,13 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { EditProductComponent } from './components/edit-product/edit-product.component';
 import { ManageProductsComponent } from './components/manage-products/manage-products.component';
 import { About } from './components/about/about';
+import { HomeComponent } from './components/home/home';
+import { ProductListComponent } from './components/product-list/product-list';
+import { ProductDetail } from './components/product-detail/product-detail';
+import { SearchComponent } from './components/search/search';   
+import { Navbar } from './components/navbar/navbar';
+import { Footer } from './components/footer/footer';    
+
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,4 +35,8 @@ export const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent }
   
+  { path: 'admin/delete-product/:id', component: EditProductComponent },
+  { path: 'products', component: ProductListComponent },
+  { path: 'product/:id', component: ProductDetail },
+  { path: '**', redirectTo: '' }
 ];
