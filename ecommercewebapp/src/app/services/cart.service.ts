@@ -1,3 +1,8 @@
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
+import { CartItem } from '../models/cart-item.model';
+import { Product } from '../models/product.model';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Product } from '../models/product.model';
@@ -11,6 +16,14 @@ export interface CartItem {
   providedIn: 'root'
 })
 export class CartService {
+
+  private cartItems: CartItem[] = [];
+  private cartItemsSubject = new BehaviorSubject<CartItem[]>([]);
+  public cartItems$ = this.cartItemsSubject.asObservable();
+  public items$ = this.cartItems$;
+
+  private cartTotalSubject = new BehaviorSubject<number>(0);
+  public cartTotal$ = this.cartTotalSubject.asObservable();
   private cartItems = new BehaviorSubject<CartItem[]>([]);
   cartItems$ = this.cartItems.asObservable();
   items$ = this.cartItems$;
@@ -20,6 +33,9 @@ export class CartService {
   }
 
   addToCart(product: Product, quantity: number = 1): void {
+    const existingItem = this.cartItems.find(
+      item => item.product.id === product.id
+    );
     const currentItems = this.cartItems.value;
     const existingItem = currentItems.find(item => item.product.id === product.id);
 
@@ -32,6 +48,17 @@ export class CartService {
   }
 
   removeFromCart(productId: string): void {
+    this.cartItems = this.cartItems.filter(
+      item => item.product.id !== productId
+    );
+    this.updateCart();
+  }
+
+  updateQuantity(productId: string, quantity: number): void {
+    const item = this.cartItems.find(
+      item => item.product.id === productId
+    );
+
     const currentItems = this.cartItems.value.filter(item => item.product.id !== productId);
     this.cartItems.next(currentItems);
   }
@@ -45,6 +72,20 @@ export class CartService {
     }
   }
 
+  calculateTotal(): number {
+    return this.cartItems.reduce(
+      (total, item) => total + (item.product.price * item.quantity),
+      0
+    );
+  }
+
+  clearCart(): void {
+    this.cartItems = [];
+    this.updateCart();
+  }
+
+  getCartItems(): CartItem[] {
+    return this.cartItems;
   getTotalPrice(): Observable<number> {
     return new Observable(observer => {
       this.cartItems$.subscribe(items => {
@@ -63,6 +104,18 @@ export class CartService {
     });
   }
 
+  getTotal(): number {
+    return this.calculateTotal();
+  }
+
+  removeItem(productId: string): void {
+    this.removeFromCart(productId);
+  }
+
+  private updateCart(): void {
+    this.cartItemsSubject.next([...this.cartItems]);
+    this.cartTotalSubject.next(this.calculateTotal());
+    this.saveCartToStorage();
   clearCart(): void {
     this.cartItems.next([]);
   }
@@ -77,5 +130,6 @@ export class CartService {
   removeItem(productId: string): void {
     this.removeFromCart(productId);
   }
+}
 }
 

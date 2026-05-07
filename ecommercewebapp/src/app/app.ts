@@ -18,6 +18,7 @@ import { About } from './components/about/about';
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [RouterOutlet, Navbar, Footer],
   imports: [RouterOutlet, Navbar, Footer, HomeComponent, ProductListComponent, SearchComponent, LoginComponent, RegisterComponent, OrderHistoryComponent, AdminDashboardComponent, AddProductComponent, EditProductComponent, ManageProductsComponent, About],
   templateUrl: './app.html',
   styleUrls: ['./app.css']

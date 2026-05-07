@@ -50,6 +50,17 @@ export class EditProductComponent implements OnInit {
     if (!this.productId) return;
 
     const product = this.productService.getProductById(this.productId);
+    if (product) {
+      this.productForm.patchValue({
+        name: product.name,
+        description: product.description,
+        price: product.price,
+        category: product.category,
+        imageUrl: product.imageUrl
+      });
+    } else {
+      this.error = 'Product not found';
+    }
 
     if (!product) {
       this.error = 'Product not found';
