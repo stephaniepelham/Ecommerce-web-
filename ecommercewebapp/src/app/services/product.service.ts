@@ -16,7 +16,8 @@ export class ProductService {
       category: 'Electronics',
       price: 249.99,
       inventory: 42,
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80',
+      createdBy: 'admin'
     },
     {
       id: '2',
@@ -25,7 +26,7 @@ export class ProductService {
       category: 'Audio',
       price: 249.00,
       inventory: 78,
-      image: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '3',
@@ -34,7 +35,7 @@ export class ProductService {
       category: 'Gaming',
       price: 349.99,
       inventory: 36,
-      image: 'https://images.unsplash.com/photo-1606813909125-4d606b23d6b7?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1606813909125-4d606b23d6b7?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '4',
@@ -43,7 +44,7 @@ export class ProductService {
       category: 'TV & Video',
       price: 899.99,
       inventory: 20,
-      image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '5',
@@ -52,7 +53,7 @@ export class ProductService {
       category: 'Books',
       price: 189.99,
       inventory: 63,
-      image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '6',
@@ -61,7 +62,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 89.99,
       inventory: 95,
-      image: 'https://images.unsplash.com/photo-1511689660979-5be60c809e20?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1511689660979-5be60c809e20?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '7',
@@ -70,7 +71,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 129.99,
       inventory: 52,
-      image: 'https://images.unsplash.com/photo-1511689660979-5be60c809e20?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1511689660979-5be60c809e20?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '8',
@@ -79,7 +80,7 @@ export class ProductService {
       category: 'Electronics',
       price: 49.99,
       inventory: 112,
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '9',
@@ -88,7 +89,7 @@ export class ProductService {
       category: 'Audio',
       price: 329.00,
       inventory: 18,
-      image: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '10',
@@ -97,7 +98,7 @@ export class ProductService {
       category: 'Wearables',
       price: 399.00,
       inventory: 34,
-      image: 'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '11',
@@ -106,7 +107,7 @@ export class ProductService {
       category: 'Audio',
       price: 348.00,
       inventory: 28,
-      image: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '12',
@@ -115,7 +116,7 @@ export class ProductService {
       category: 'Gaming',
       price: 299.99,
       inventory: 46,
-      image: 'https://images.unsplash.com/photo-1512446733611-9099a758e1a4?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512446733611-9099a758e1a4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '13',
@@ -124,7 +125,7 @@ export class ProductService {
       category: 'Audio',
       price: 249.99,
       inventory: 55,
-      image: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '14',
@@ -133,7 +134,7 @@ export class ProductService {
       category: 'Computers',
       price: 1199.00,
       inventory: 14,
-      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '15',
@@ -142,7 +143,7 @@ export class ProductService {
       category: 'Computers',
       price: 1049.99,
       inventory: 23,
-      image: 'https://images.unsplash.com/photo-1541807084-5c52b6b418af?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1541807084-5c52b6b418af?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '16',
@@ -151,7 +152,7 @@ export class ProductService {
       category: 'Electronics',
       price: 39.99,
       inventory: 135,
-      image: 'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '17',
@@ -160,7 +161,7 @@ export class ProductService {
       category: 'Computers',
       price: 99.99,
       inventory: 65,
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '18',
@@ -169,7 +170,7 @@ export class ProductService {
       category: 'Office',
       price: 129.99,
       inventory: 49,
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '19',
@@ -178,7 +179,7 @@ export class ProductService {
       category: 'Books',
       price: 249.99,
       inventory: 31,
-      image: 'https://images.unsplash.com/photo-1473755504818-b72b6dfdc7cc?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1473755504818-b72b6dfdc7cc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '20',
@@ -187,7 +188,7 @@ export class ProductService {
       category: 'Photography',
       price: 69.99,
       inventory: 88,
-      image: 'https://images.unsplash.com/photo-1519183071298-a2962f4bda50?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1519183071298-a2962f4bda50?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '21',
@@ -196,7 +197,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 699.95,
       inventory: 19,
-      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '22',
@@ -205,7 +206,7 @@ export class ProductService {
       category: 'Home',
       price: 599.99,
       inventory: 27,
-      image: 'https://images.unsplash.com/photo-1587825140708-5d75f0f8e7b4?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1587825140708-5d75f0f8e7b4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '23',
@@ -214,7 +215,7 @@ export class ProductService {
       category: 'Home',
       price: 274.99,
       inventory: 41,
-      image: 'https://images.unsplash.com/photo-1598300050699-3f2377e5da52?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1598300050699-3f2377e5da52?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '24',
@@ -223,7 +224,7 @@ export class ProductService {
       category: 'Smart Home',
       price: 179.99,
       inventory: 60,
-      image: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '25',
@@ -232,7 +233,7 @@ export class ProductService {
       category: 'Smart Home',
       price: 199.99,
       inventory: 48,
-      image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '26',
@@ -241,7 +242,7 @@ export class ProductService {
       category: 'Wearables',
       price: 179.95,
       inventory: 71,
-      image: 'https://images.unsplash.com/photo-1518441615474-45da0a35d8be?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518441615474-45da0a35d8be?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '27',
@@ -250,7 +251,7 @@ export class ProductService {
       category: 'Health',
       price: 299.00,
       inventory: 33,
-      image: 'https://images.unsplash.com/photo-1584466977774-1716f47f073f?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1584466977774-1716f47f073f?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '28',
@@ -259,7 +260,7 @@ export class ProductService {
       category: 'Outdoors',
       price: 44.95,
       inventory: 105,
-      image: 'https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '29',
@@ -268,7 +269,7 @@ export class ProductService {
       category: 'Outdoors',
       price: 129.99,
       inventory: 39,
-      image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '30',
@@ -277,7 +278,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 99.99,
       inventory: 47,
-      image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '31',
@@ -286,7 +287,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 329.95,
       inventory: 16,
-      image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '32',
@@ -295,7 +296,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 129.99,
       inventory: 77,
-      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '33',
@@ -304,7 +305,7 @@ export class ProductService {
       category: 'Electronics',
       price: 49.99,
       inventory: 134,
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '34',
@@ -313,7 +314,7 @@ export class ProductService {
       category: 'Audio',
       price: 299.00,
       inventory: 24,
-      image: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '35',
@@ -322,7 +323,7 @@ export class ProductService {
       category: 'Photography',
       price: 449.99,
       inventory: 13,
-      image: 'https://images.unsplash.com/photo-1519183071298-a2962f4bda50?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1519183071298-a2962f4bda50?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '36',
@@ -331,7 +332,7 @@ export class ProductService {
       category: 'Wearables',
       price: 199.99,
       inventory: 40,
-      image: 'https://images.unsplash.com/photo-1518441615474-45da0a35d8be?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518441615474-45da0a35d8be?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '37',
@@ -340,7 +341,7 @@ export class ProductService {
       category: 'Cell Phones',
       price: 799.99,
       inventory: 29,
-      image: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '38',
@@ -349,7 +350,7 @@ export class ProductService {
       category: 'Audio',
       price: 129.99,
       inventory: 49,
-      image: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '39',
@@ -358,7 +359,7 @@ export class ProductService {
       category: 'Home',
       price: 549.99,
       inventory: 14,
-      image: 'https://images.unsplash.com/photo-1598300050699-3f2377e5da52?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1598300050699-3f2377e5da52?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '40',
@@ -367,7 +368,7 @@ export class ProductService {
       category: 'Home',
       price: 229.99,
       inventory: 38,
-      image: 'https://images.unsplash.com/photo-1587825140708-5d75f0f8e7b4?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1587825140708-5d75f0f8e7b4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '41',
@@ -376,7 +377,7 @@ export class ProductService {
       category: 'Electronics',
       price: 59.99,
       inventory: 90,
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '42',
@@ -385,7 +386,7 @@ export class ProductService {
       category: 'Networking',
       price: 129.99,
       inventory: 58,
-      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '43',
@@ -394,7 +395,7 @@ export class ProductService {
       category: 'Computers',
       price: 449.99,
       inventory: 34,
-      image: 'https://images.unsplash.com/photo-1541807084-5c52b6b418af?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1541807084-5c52b6b418af?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '44',
@@ -403,7 +404,7 @@ export class ProductService {
       category: 'Computers',
       price: 139.99,
       inventory: 76,
-      image: 'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '45',
@@ -412,7 +413,7 @@ export class ProductService {
       category: 'Smart Home',
       price: 199.99,
       inventory: 26,
-      image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '46',
@@ -421,7 +422,7 @@ export class ProductService {
       category: 'Kitchen',
       price: 159.00,
       inventory: 29,
-      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '47',
@@ -430,7 +431,7 @@ export class ProductService {
       category: 'Cell Phones',
       price: 699.00,
       inventory: 22,
-      image: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1512499617640-c2f99956c29d?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '48',
@@ -439,7 +440,7 @@ export class ProductService {
       category: 'Audio',
       price: 129.95,
       inventory: 81,
-      image: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '49',
@@ -448,7 +449,7 @@ export class ProductService {
       category: 'Office',
       price: 19.95,
       inventory: 172,
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '50',
@@ -457,7 +458,7 @@ export class ProductService {
       category: 'Apparel',
       price: 149.95,
       inventory: 39,
-      image: 'https://images.unsplash.com/photo-1517341725137-c6c48ef1b2f1?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517341725137-c6c48ef1b2f1?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '51',
@@ -466,7 +467,7 @@ export class ProductService {
       category: 'Gaming',
       price: 499.99,
       inventory: 12,
-      image: 'https://images.unsplash.com/photo-1606813909125-4d606b23d6b7?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1606813909125-4d606b23d6b7?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     },
     {
       id: '52',
@@ -475,7 +476,7 @@ export class ProductService {
       category: 'Beauty',
       price: 549.99,
       inventory: 17,
-      image: 'https://images.unsplash.com/photo-1516199422444-07c14ebc88bc?auto=format&fit=crop&w=400&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1516199422444-07c14ebc88bc?auto=format&fit=crop&w=400&q=80', createdBy: 'admin'
     }
   ];
 
@@ -498,34 +499,5 @@ export class ProductService {
       product.category.toLowerCase().includes(normalized) ||
       product.description.toLowerCase().includes(normalized)
     );
-  }
-}
-  private apiUrl = 'api/products';
-
-  constructor(private http: HttpClient) { }
-
-  getAllProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.apiUrl);
-  }
-
-  getProductById(id: string): Observable<Product> {
-    return this.http.get<Product>(`${this.apiUrl}/${id}`);
-  }
-
-  searchProducts(query: string): Observable<Product[]> {
-    const params = new HttpParams().set('q', query);
-    return this.http.get<Product[]>(`${this.apiUrl}/search`, { params });
-  }
-
-  filterByCategory(category: string): Observable<Product[]> {
-    const params = new HttpParams().set('category', category);
-    return this.http.get<Product[]>(`${this.apiUrl}/category`, { params });
-  }
-
-  filterByPrice(minPrice: number, maxPrice: number): Observable<Product[]> {
-    const params = new HttpParams()
-      .set('minPrice', minPrice.toString())
-      .set('maxPrice', maxPrice.toString());
-    return this.http.get<Product[]>(`${this.apiUrl}/price-range`, { params });
   }
 }

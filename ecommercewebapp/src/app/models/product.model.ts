@@ -5,9 +5,6 @@ export interface Product {
   category: string;
   price: number;
   inventory: number;
-  image: string;
-  price: number;
-  category: string;
   imageUrl: string;
   createdBy: string; // admin/seller ID
 }
