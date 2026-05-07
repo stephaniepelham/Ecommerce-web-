@@ -1,33 +1,4 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home';
-import { ProductDetail } from './components/product-detail/product-detail';
-import { CartComponent } from './components/cart/cart';
-import { CheckoutComponent } from './components/checkout/checkout';
-
-export const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: 'product/:id',
-    component: ProductDetail
-  },
-  {
-    path: 'cart',
-    component: CartComponent
-  },
-  {
-    path: 'checkout',
-    component: CheckoutComponent
-  },
-  {
-    path: '**',
-    redirectTo: ''
-  }
-];
-
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
@@ -36,10 +7,16 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { EditProductComponent } from './components/edit-product/edit-product.component';
 import { ManageProductsComponent } from './components/manage-products/manage-products.component';
 import { About } from './components/about/about';
+import { HomeComponent } from './components/home/home';
+import { ProductListComponent } from './components/product-list/product-list';
+import { SearchComponent } from './components/search/search';
+import { Navbar } from './components/navbar/navbar';
+import { Footer } from './components/footer/footer';    
+
 
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'about', component: About },
@@ -47,6 +24,11 @@ export const routes: Routes = [
   { path: 'admin/dashboard', component: AdminDashboardComponent },
   { path: 'admin/add-product', component: AddProductComponent },
   { path: 'admin/edit-product/:id', component: EditProductComponent },
+  { path: 'admin/delete-product/:id', component: EditProductComponent },
+  { path: 'products', component: ProductListComponent },
+  { path: 'search', component: SearchComponent },   
+  { path: 'navbar', component: Navbar },
+  { path: 'footer', component: Footer },     
   { path: 'admin/manage-products', component: ManageProductsComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '' }
 ];

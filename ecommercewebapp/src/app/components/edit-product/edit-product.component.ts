@@ -49,19 +49,19 @@ export class EditProductComponent implements OnInit {
   loadProduct(): void {
     if (!this.productId) return;
 
-    this.productService.getProductById(this.productId).subscribe({
-      next: (product: Product) => {
-        this.productForm.patchValue({
-          name: product.name,
-          description: product.description,
-          price: product.price,
-          category: product.category,
-          imageUrl: product.imageUrl
-        });
-      },
-      error: (error) => {
-        this.error = error.error?.message || 'Failed to load product';
-      }
+    const product = this.productService.getProductById(this.productId);
+
+    if (!product) {
+      this.error = 'Product not found';
+      return;
+    }
+
+    this.productForm.patchValue({
+      name: product.name,
+      description: product.description,
+      price: product.price,
+      category: product.category,
+      imageUrl: product.imageUrl ?? ''
     });
   }
 
